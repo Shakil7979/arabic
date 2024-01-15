@@ -1,11 +1,77 @@
- 
+/* Download Fonts  */ 
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+@font-face {
+    font-family: 'din_next_lt_black';
+    src: url('../fonts/din_next_arabic_black-webfont.woff2') format('woff2'),
+         url('../fonts/din_next_arabic_black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+} 
+
+@font-face {
+    font-family: 'din_next_lt_bold';
+    src: url('../fonts/din_next_arabic_bold-webfont.woff2') format('woff2'),
+         url('../fonts/din_next_arabic_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+} 
+
+@font-face {
+    font-family: 'din_next_lt_heavy';
+    src: url('../fonts/din_next_arabic_heavy-webfont.woff2') format('woff2'),
+         url('../fonts/din_next_arabic_heavy-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+} 
+
+@font-face {
+    font-family: 'din_next_lt_light';
+    src: url('../fonts/din_next_arabic_light-webfont.woff2') format('woff2'),
+         url('../fonts/din_next_arabic_light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+} 
+
+@font-face {
+    font-family: 'din_next_lt_medium';
+    src: url('../fonts/din_next_arabic_medium_-webfont.woff2') format('woff2'),
+         url('../fonts/din_next_arabic_medium_-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+} 
+
+@font-face {
+    font-family: 'din_next_lt_regular';
+    src: url('../fonts/din_next_arabic_regular-webfont.woff2') format('woff2'),
+         url('../fonts/din_next_arabic_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+} 
+
+@font-face {
+    font-family: 'din_next_lt_ultra_light';
+    src: url('../fonts/din_next_arabic_ultralight-webfont.woff2') format('woff2'),
+         url('../fonts/din_next_arabic_ultralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 html{
 	font-size: 62.5%;
 }
 body{	
 	font-size: 1.6rem; 
-	font-weight: 400;
+	font-weight: 400; 
+    font-family: 'din_next_lt_regular';
 }
 h1,h2,h3,h4,h5,h6,p{
 	margin: 0;
@@ -19,14 +85,581 @@ ul{
 ul li a,a{
 	text-decoration: none;
 }
-/*======================  Start Page  ======================*/
+
+/*======================  Home Page CSS  ======================*/
+
+.top_header a img {
+	width: 160px;
+	padding: 10px 0;
+}
+
+.main_menu_area{
+	background: #0C66E1;
+	padding: 7px 0;
+}
+
+.user_menu ul li a ,
+.main_menu ul li a {
+	letter-spacing: 0px;
+	color: #FFFFFF;
+	font-size: 16px;
+	position: relative;
+	transition: 0.3s;
+}
+
+.user_menu ul li a:hover ,
+.main_menu ul li a:hover{
+	opacity: 0.83;
+}
+
+.user_menu ul li a span,
+.main_menu ul li a span {
+	position: absolute;
+	top: 0;
+	right: -13px;
+	background: #bfbf0b;
+	width: 15px;
+	height: 15px;
+	font-size: 11px;
+	border-radius: 100%;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.user_menu ul ,
+.main_menu ul {
+	display: flex;
+	align-items: center;
+	gap: 25px;
+}
+
+.main_menu ul li {
+	position: relative;
+	transition: 0.3s;
+}
+
+.drop_down_menu {
+	flex-direction: column;
+	position: absolute;
+	background: #0C66E1;
+	right: -6px;
+	padding: 5px 0;
+	gap: 5px !important;
+	top: 117%;
+	width: 117px;
+	visibility: hidden;
+	opacity: 0;
+	border-radius: 5px;
+
+}
 
 
 
+.main_menu ul li:hover .drop_down_menu {
+	opacity: 1;
+	visibility: visible;
+}
+
+
+.menu_disable{
+	opacity: 60%;
+}
+
+.user_name {
+	background: #fff;
+	width: 20px;
+	height: 20px;
+	display: flex;
+	font-size: 11px !important;
+	border-radius: 100%;
+	color: #000 !important;
+	justify-content: center;
+	align-items: center;
+	font-weight: 700;
+}
+
+
+.user_menu ul {
+	gap: 15px;
+}
+
+.menu_header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+
+.header_form .form_group input {
+	color: #D1D1D1;
+	box-shadow: 0 3px 6px #00000029;
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+	border: none;
+	border-bottom: 2px solid #0C66E1;
+	padding: 2px 10px;
+}
+
+.header_form .form_group { 
+	position: relative;
+}
+
+.header_form .form_group button i { 
+	color: #D1D1D1;
+}
+
+.header_input {
+	color: #58A8C0 !important;
+	text-align: center;
+	opacity: 100%;
+}
+
+.header_form .form_group button {
+	background: transparent;
+	border: none;
+	position: absolute;
+	top: 6px;
+	left: 8px;
+}
+
+.header_form_main {
+	background: #D6D5D6;
+	padding: 25px 0;
+}
+
+.header_form {
+	display: flex;
+	gap: 20px;
+	justify-content: flex-end;
+}
+
+.card_item ul li span {
+	width: 67px;
+	height: 67px;
+	background: #0C66E1;
+	display: inline-block;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.card_item ul li p { 
+	color: #313131;
+	font-size: 18px;
+}
+
+.banner_header p {
+	color: #C3C3C3;
+	font-size: 16px;
+}
+
+.banner_header {
+	margin: 12px 0 33px 0;
+}
+
+.banner_header h2 {
+	color: #0C66E1;
+	font-size: 30px;
+	font-weight: 500;
+}
+
+.card_item {
+	border: 1px solid #CFCFCF;
+	padding: 17px 30px;
+	height: 100%;
+}
+
+.card_item  h4 {
+	color: #1E1E1E;
+	font-size: 18px;
+	margin-bottom: 44px;
+}
+
+.card_item ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.card_item ul li {
+	flex: 0 0 50%;
+	display: flex;
+	align-items: center;
+	margin-bottom: 64px;
+	gap: 12px;
+}
+
+.card_item ul li:nth-child(5) , 
+.card_item ul li:last-child { 
+	margin-bottom: 0;
+}
+
+
+.banner_area{
+	margin-bottom: 78px;
+}
+
+.cart_item_main {
+	flex: 0 0 68%;
+	border: 1px solid #CFCFCF;
+}
+
+.cart_item_2{ 
+	padding: 17px 30px;
+}
+
+.cart_item_header h4 {
+	color: #252836;
+	padding: 10px 14px;
+	font-size: 18px;
+	border-bottom: 1px solid #CFCFCF;
+}
+
+.cart_item_30{
+	flex: 0 0 30%;
+}
+
+.cart_flex {
+	display: flex;
+	justify-content: space-between;
+	gap: 8px;
+}
+
+.table{
+	border: none;
+}
+
+.table_data .table > :not(caption) > * > * { 
+	border: none;
+}
+
+.table_data .table.table-striped tbody tr th {
+	color: #0C66E1;
+	font-size: 14px;
+}
+
+.table_data .table.table-striped tbody tr td {
+	color: #646984;
+	font-size: 14px;
+}
+
+.table_data h4 {
+	margin: 15px 0 20px 0;
+	font-size: 18px;
+	color: #252836;
+}
+
+#app {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: 30px 0;
+	width: 100%;
+  }
+  
+  #chart {
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+	padding: 1rem;
+  }
+  
+  #data {
+	display: flex;
+	align-items: center;
+	margin-top: 20px;
+  }
+  
+  #data ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+  }
+  
+  #data li {
+	margin-bottom: 1rem;
+	padding: 1rem;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+	width: 10rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: bold;
+  }
+  
+  .bar {
+	fill: #4f009e;
+  }
+  
+  .label {
+	fill: #4f009e;
+  }
+
+  .footer_area{
+	background: #F2F2F2;
+	padding: 41px 0;
+  }
+
+  .copy_right p{
+	font-size: 14px;
+	color: #999999;
+  }
+
+
+/*======================  Second Page CSS  ======================*/
+
+.second_table_search {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 22px;
+}
+
+.table_search_form {
+	display: flex;
+	gap: 12px;
+}
+
+.table_search_form input {
+	border: 1px solid #CCCCCC;
+	border-radius: 8px;
+	color: #CCCCCC;
+	font-size: 16px;
+	text-align: left;
+	padding: 5px 5px 5px 36px;
+	box-sizing: border-box;
+	/* height: 38px; */
+	width: 100%;
+}
+
+.table_search_form .form_group{
+	position: relative;
+	width: 238px;
+}
+
+.table_search_form .form_group i {
+	position: absolute;
+	top: 12px;
+	left: 13px;
+	color: #CCCCCC;
+}
+
+.btn_1 {
+	background: #0C66E1;
+	border: none;
+	border-radius: 5px;
+	width: 236px;
+	height: 42px;
+	font-size: 14px;
+	color: #fff;
+	transition: 0.3s;
+}
+
+.btn_1:hover{
+	opacity: 0.83;
+}
+
+.second_table_search h3 {
+	color: #252836;
+	font-size: 24px;
+}
+
+.form_menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 24px;
+}
+
+.right_menu {
+	display: flex;
+	align-items: center;
+	gap: 25px;
+	color: #252836;
+	font-size: 14px;
+}
+
+.left_menu ul {
+	display: flex;
+	align-items: center;
+	gap: 46px;
+	margin-left: 60px;
+}
+
+.left_menu ul li a {
+	display: flex;
+	align-items: center;
+	width: 128px;
+	justify-content: space-between;
+	color: #252836;
+}
+
+.left_menu ul li {
+	position: relative;
+}
+
+.left_menu ul li ul{
+	position: absolute;
+}
+
+.left_menu ul li ul {
+	position: absolute;
+	flex-direction: column;
+	gap: 10px;
+	background: #000;
+	color: #fff;
+	padding: 10px 28px; 
+	border-radius: 5px;
+	top: 100%;
+	width: 100%;
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.3s;
+}
+
+.left_menu ul li ul li a {
+	color: #fff;
+	padding-right: 10px;
+}
+
+.left_menu ul li:hover ul {
+	visibility: visible;
+	opacity: 1;
+}
+
+.edit_delete {
+	display: flex;
+	gap: 5px;
+}
+
+.edit_delete a i {
+	color: #646984;
+}
+
+.link_form {
+	color: #0C66E1;
+	text-decoration: underline;
+}
+
+.paginations ul li a {
+	border: 1px solid #E6E6E6;
+	border-radius: 3px;
+	display: inline-block;
+	color: #E6E6E6;
+	width: 30px;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.paginations ul {
+	display: flex;
+	gap: 8px;
+	justify-content: flex-end;
+	margin-top: 44px;
+}
+
+.pagination_item {
+	background: #E6E6E6;
+	color: #0C66E1 !important;
+}
 
 
 
+/*======================  THird Page CSS  ======================*/
 
-/*======================  End Page  ======================*/
 
+.third_form {
+	border: 1px solid #CCCCCC;
+	border-radius: 28px;
+	padding: 19px 44px;
+}
+
+.third_form h3{
+	color: #252836;
+	font-size: 24px;
+	margin-bottom: 35px;
+}
+
+.frm_group select ,
+.frm_group input {
+	border: 1px solid #CCCCCC;
+	border-radius: 8px;
+	width: 100%;
+	height: 40px;
+	color: #CCCCCC;
+	font-size: 14px;
+	padding: 0 10px;
+}
+
+.frm_group select{
+	background: transparent;
+}
+
+.frm_item p{ 
+	color: #CCCCCC;
+	font-size: 14px;
+}
+
+.frm_group{
+	margin-bottom: 24px;
+	position: relative;
+}
+
+.span_frm{
+	color: #CCCCCC;
+	font-size: 12px;
+}
+
+.frm_item h4,
+.frm_group label {
+	color: #0C66E1;
+	font-size: 14px;
+	margin-bottom: 8px;
+}
+
+.frm_flex {
+	background: #FAFAFA;
+	border-radius: 8px;
+	margin-bottom: 24px;
+	display: flex;
+	padding: 12px;
+	justify-content: space-between;
+}
+
+.frm_item {
+	flex: 0 0 16%;
+}
+
+.frm_span {
+	color: #646984;
+	font-size: 14px;
+	position: absolute;
+	left: 12px;
+	top: 37px;
+}
+
+.frm_span::after {
+	position: absolute;
+	content: '';
+	width: 1px;
+	background: #CCCCCC;
+	height: 39px;
+	right: -13px;
+	top: -5px;
+	z-index: 9;
+}
+
+
+
+/*======================  Home Page CSS  ======================*/
+
+
+/* 
+
+font-family: 'din_next_lt_medium';
+
+font-family: 'Montserrat', sans-serif;
+
+ */
 
