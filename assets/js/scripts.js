@@ -17,10 +17,53 @@
 		}else{ 
 			$('.third_form').fadeOut();
 		}
+
+		return false;
+	});
+
+	$(document).on('click','.next_btn', function (){
+
+		var prevRs = $('.tabs_area ul li a p.active').closest('a').find('span').html();
+		var prevRss = parseInt(prevRs)  + 1; 
+
+		if(prevRss > 17 ){
+			prevRss = 1; 
+		}
+		
+		$('.tabs_area ul li a p').removeClass('active');
+		$('.'+prevRss).find('p').addClass('active') ;
+
+		if(prevRss == 1){
+			$('.third_form').fadeIn();
+		}else{ 
+			$('.third_form').fadeOut();
+		}
 		
 
 		return false;
 	});
+	$(document).on('click','.prev_btn', function (){  
+		
+		var prevRs = $('.tabs_area ul li a p.active').closest('a').find('span').html();
+		var prevRss = parseInt(prevRs)  - 1; 
+
+		if(prevRss < 1 ){
+			prevRss = 1; 
+		}
+		
+		$('.tabs_area ul li a p').removeClass('active');
+		$('.'+prevRss).find('p').addClass('active') ;
+
+		if(prevRss == 1){
+			$('.third_form').fadeIn();
+		}else{ 
+			$('.third_form').fadeOut();
+		}
+
+		return false;
+	});
+
+	
 
 
 	// pai chart 
@@ -203,7 +246,7 @@ svg.append("text")
   .attr("y", 5)
   .attr("dy", "0.8em")
   .attr("text-anchor", "end")
-  .text("Member Rank");
+  .text("");
 
 svg.selectAll("bar")
   .data(data)
