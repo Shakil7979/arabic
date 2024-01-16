@@ -2,24 +2,142 @@
     .container{
         max-width: 1190px;
     }
+
+}
+
+@media all and (max-width: 1200px){
+    .main_menu ul { 
+        gap: 15px; 
+    }
 }
 
 @media all and (max-width: 1199px){
 
 }
 
+@media all and (min-width: 991px){
+    .main_menu ul {  
+        display: flex !important;
+    }
+    .main_menu {
+        display: block !important; 
+    }
+}
+
 @media all and (max-width: 991px){
-	
+    .main_menu {
+        display: none;
+        position: absolute;
+        background: #0C66E1;
+        width: 100%;
+        right: 0;
+        top: 100%;
+        z-index: 99;
+        padding: 25px 0;
+    }
+    .main_menu_area{
+        position: relative;
+    }
+    .main_menu ul {  
+        flex-direction: column;
+    }
+    .bars_icon i {
+        color: #fff;
+    }
+    .cart_flex { 
+        flex-direction: column;
+        margin: 12px 0;
+    }
+    .pie-chart__legend { 
+        justify-content: center;
+    }
 }
 
 @media all and (max-width: 767px){
-	
+	.banner_header h2 { 
+        font-size: 25px; 
+    }
+    .banner_header p { 
+        font-size: 14px;
+    }
+    .banner_area {
+        margin-bottom: 35px;
+    }
+    .card_item ul li p { 
+        font-size: 16px;
+    }
+    .table_data {
+        width: 100%;
+        overflow: scroll;
+    }
+    .table_data .table {
+        width: 700px;
+        overflow-y: scroll;
+    }
+    .second_table_search { 
+        flex-direction: column;
+        gap: 9px;
+    }
+    .left_menu ul li a { 
+        width: 87px; 
+    } 
+    .left_menu ul { 
+        gap: 20px;
+        margin-left: 0;
+    }
+    .table_search_form { 
+        flex-direction: column;
+    }
+    .form_btn { 
+        flex-direction: column;
+        gap: 15px;
+    }
+    .tabs_area ul li:nth-child(18) ,
+    .tabs_area ul li:nth-child(17) ,
+    .tabs_area ul li:nth-child(16) ,
+    .tabs_area ul li:nth-child(15) ,
+    .tabs_area ul li:nth-child(14) ,
+    .tabs_area ul li:nth-child(13) ,
+    .tabs_area ul li:nth-child(12) ,
+    .tabs_area ul li:nth-child(11) ,
+    .tabs_area ul li:nth-child(10) ,
+    .tabs_area ul li:nth-child(9) ,
+    .tabs_area ul li:nth-child(8) {
+        display: none;
+    }
+    .frm_group {
+        margin-bottom: 8px; 
+    }
 }
 
 @media all and (max-width: 575px){
-	
+	.user_menu ul li a, .main_menu ul li a { 
+        font-size: 14px; 
+    }
+    #barGraph svg {
+        width: 100%;
+    }
+    .left_menu ul li a {
+        width: 81px;
+    }
+    .form_btn ul { 
+        flex-direction: column;
+    }
+    .frm_item {
+        flex: 0 0 30%;
+    }
+    .frm_flex { 
+        justify-content: start;
+        flex-wrap: wrap;
+        gap: 10px
+    }
 }
 
 @media all and (max-width: 450px){
-	
+	.header_form { 
+        flex-direction: column;
+    }
+    .header_form .form_group input { 
+        width: 100%;
+    }
 }

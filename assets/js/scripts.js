@@ -1,5 +1,12 @@
   
  
+	$(document).on('click','.bars_icon', function (){
+		$('.main_menu').slideToggle();  
+		
+
+		return false;
+	});
+ 
 	$(document).on('click','.tabs_area ul li a', function (){
 		$('.tabs_area ul li a p').removeClass('active');
 		$(this).find('p').addClass('active') ;
