@@ -115,7 +115,7 @@
         font-size: 14px; 
     }
     #barGraph svg {
-        width: 100%;
+        width: 380px;
     }
     .left_menu ul li a {
         width: 81px;
@@ -131,6 +131,9 @@
         flex-wrap: wrap;
         gap: 10px
     }
+    .cart_flex { 
+        overflow: hidden;
+    }
 }
 
 @media all and (max-width: 450px){
@@ -139,5 +142,8 @@
     }
     .header_form .form_group input { 
         width: 100%;
+    }
+    .card_item ul li span { 
+        flex: 0 0 42%;
     }
 }
