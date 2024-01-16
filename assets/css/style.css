@@ -423,6 +423,19 @@
  .card_item ul li:last-child { 
 	 margin-bottom: 0;
  }
+
+ .firstPage_row{
+	display: flex;
+	justify-content: space-between;
+ }
+
+ .firstPage_right{
+	flex: 0 0 38%;
+ }
+
+ .firstPage_left{
+	flex: 0 0 61%;
+ }
  
  
  .banner_area{
@@ -431,8 +444,8 @@
  
  .cart_item_main {
 	 -webkit-box-flex: 0;
-		 -ms-flex: 0 0 68%;
-			 flex: 0 0 68%;
+		 -ms-flex: 0 0 66%;
+			 flex: 0 0 66%;
 	 border: 1px solid #CFCFCF;
  }
  
@@ -450,8 +463,8 @@
  
  .cart_item_30{
 	 -webkit-box-flex: 0;
-		 -ms-flex: 0 0 30%;
-			 flex: 0 0 30%;
+		 -ms-flex: 0 0 32%;
+			 flex: 0 0 32%;
  }
  
  .cart_flex {

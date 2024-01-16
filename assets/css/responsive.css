@@ -39,6 +39,9 @@
         z-index: 99;
         padding: 25px 0;
     }
+    .firstPage_row { 
+        flex-direction: column;
+    }
     .main_menu_area{
         position: relative;
     }

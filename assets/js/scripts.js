@@ -201,7 +201,7 @@ var margin = {
     bottom: 100,
     left: 60
   },
-  width = 500 - margin.left - margin.right,
+  width = 450 - margin.left - margin.right,
   height = 300 - margin.top - margin.bottom,
   x = d3.scaleBand().rangeRound([15, width]).paddingInner(0.5),
   y = d3.scaleLinear().range([height, 0]);
