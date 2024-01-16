@@ -348,8 +348,14 @@
  
  .card_item ul li p { 
 	 color: #313131;
-	 font-size: 16px;
+	 font-size: 18px;
  }
+
+ g.tick text {
+    font-size: 10px;
+    color: #3E4151;
+    transform: rotate(0deg);
+}
  
  .banner_header p {
 	 color: #C3C3C3;
@@ -469,11 +475,13 @@
  .table_data .table.table-striped tbody tr th {
 	 color: #0C66E1;
 	 font-size: 14px;
+	 padding: 10px;
  }
  
  .table_data .table.table-striped tbody tr td {
 	 color: #646984;
 	 font-size: 14px;
+	 padding: 10px;
  }
  
  .table_data h4 {
@@ -664,8 +672,8 @@
 	 -webkit-box-align: center;
 		 -ms-flex-align: center;
 			 align-items: center;
-	 gap: 46px;
-	 margin-left: 60px;
+	 gap: 18px;
+	 margin-left: 122px;
  }
  
  .left_menu ul li a {
@@ -675,7 +683,7 @@
 	 -webkit-box-align: center;
 		 -ms-flex-align: center;
 			 align-items: center;
-	 width: 128px;
+	 width: 100px;
 	 -webkit-box-pack: justify;
 		 -ms-flex-pack: justify;
 			 justify-content: space-between;
