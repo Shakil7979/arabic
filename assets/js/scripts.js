@@ -1,5 +1,15 @@
   
  
+	$(document).on('click','.link_area', function (){
+		$('.files_input').click();  
+		 
+		return false;
+	});
+	$(document).on('click','.files_btn', function (){
+		$('.files_input').click();  
+		 
+		return false;
+	});
 	$(document).on('click','.bars_icon', function (){
 		$('.main_menu').slideToggle();  
 		
@@ -62,6 +72,25 @@
 
 		return false;
 	});
+
+
+  // today date 
+
+  const ar = new Intl.DateTimeFormat("ar-TN-u-ca-islamic", {
+    day: "numeric",
+    month: "long",
+    weekday: "long",
+    year: "numeric"
+  }).format(Date.now());
+  
+  const fr = new Intl.DateTimeFormat("fr-TN-u-ca-islamic", {
+    day: "numeric",
+    month: "long",
+    weekday: "long",
+    year: "numeric"
+  }).format(Date.now());
+  
+  document.getElementById("today").innerHTML = `${ar} <br /> ${fr}`;
 
 	
 
