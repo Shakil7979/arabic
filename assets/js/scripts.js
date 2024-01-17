@@ -59,6 +59,7 @@
 
 		if(prevRss < 1 ){
 			prevRss = 1; 
+      window.location.href = 'second.html';
 		}
 		
 		$('.tabs_area ul li a p').removeClass('active');
