@@ -75,22 +75,27 @@
 
 
   // today date 
+  function getDualDate() {
+    const currentDate = new Date();
+    
+    // English date
+    const englishOptions = { year: 'numeric', month: 'long', day: 'numeric' };
+    const englishDate = new Intl.DateTimeFormat('en-US', englishOptions).format(currentDate);
+    
+    // Arabic date
+    const arabicOptions = { year: 'numeric', month: 'long', day: 'numeric', calendar: 'islamic' };
+    const arabicDate = new Intl.DateTimeFormat('ar-EG-u-ca-islamic', arabicOptions).format(currentDate);
+    
+    // Combine both dates
+    const result = `${arabicDate} / ${englishDate}`;
+    
+    return result;
+  }
+  
+  // Display the dual date in the HTML element
+  const dualDateDisplay = document.getElementById('today');
+  dualDateDisplay.innerHTML = getDualDate();
 
-  const ar = new Intl.DateTimeFormat("ar-TN-u-ca-islamic", {
-    day: "numeric",
-    month: "long",
-    weekday: "long",
-    year: "numeric"
-  }).format(Date.now());
-  
-  const fr = new Intl.DateTimeFormat("fr-TN-u-ca-islamic", {
-    day: "numeric",
-    month: "long",
-    weekday: "long",
-    year: "numeric"
-  }).format(Date.now());
-  
-  document.getElementById("today").innerHTML = `${ar} <br /> ${fr}`;
 
 	
 
