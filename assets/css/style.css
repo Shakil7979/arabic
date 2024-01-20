@@ -811,6 +811,11 @@
  
  /*======================  THird Page CSS  ======================*/
  
+ /* .from_1, */
+ .from_2{
+	display: none;
+ }
+
  
  .third_form {
 	 border: 1px solid #CCCCCC;
