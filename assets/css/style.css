@@ -811,9 +811,12 @@
  
  /*======================  THird Page CSS  ======================*/
  
- /* .from_1, */
- .from_2{
+ .from_hide{
 	display: none;
+ }
+ 
+ .from_1{
+	display: block;
  }
 
  
@@ -1245,6 +1248,92 @@
 	 }
    }
  
+ /*======================  17 Page CSS  ======================*/
+
+
+ .download_icon li {
+	position: relative;
+ }
+
+ .tooltip_down{ 
+	box-shadow: 0px 3px 6px #00000024;
+ }
+
+ .download_icon li a {
+	border: 1px solid #CFCFCF;
+	border-radius: 9px;
+	width: 35px;
+	height: 28px;
+	display: inline-block;
+	display: block;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.span_down{
+	border: none  !important;
+	width: 0 !important;
+}
+
+.download_icon {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+}
+
+.tooltip_down {
+	box-shadow: 0px 3px 6px #00000024;
+	width: 111px;
+	padding: 6px 10px;
+	position: absolute;
+	top: -70px;
+	z-index: 999;
+	background: #Fff;
+	opacity: 0; 
+	visibility: hidden;
+}
+
+.tooltip_down h4 {
+	color: #646984;
+	font-size: 12px;
+	margin: 0;
+}
+
+.tooltip_down p {
+	color: #CFCFCF;
+	font-size: 12px;
+}
+
+.download_icon li:hover .tooltip_down {
+	opacity: 1; 
+	visibility: visible;
+}
+
+.table_title_flex {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 16px;
+}
+
+.frm_group.hidden_frm_group input {
+	background: #FAFAFA;
+	border: none;
+}
+
+.frm_group.hidden_frm_group {
+	background: #FAFAFA;
+	padding: 5px;
+	border-radius: 8px;
+}
+
+.btn_from {
+	display: flex;
+	justify-content: flex-end;
+}
+
+
  /*======================  Home Page CSS  ======================*/
  
  

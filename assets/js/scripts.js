@@ -126,15 +126,92 @@
 		$('.'+prevRss).find('p').addClass('active') ;
  
 
-		if(prevRss == 1){
+
+    if(prevRss == 1){ 
+			$('.from_hide').fadeOut();
 			$('.from_1').fadeIn();
 		}
     else if (prevRss == 2){
+			$('.from_hide').fadeOut();
       $('.from_2').fadeIn(); 
+    }
+    else if (prevRss == 3){
+			$('.from_hide').fadeOut();
+      $('.from_3').fadeIn(); 
+    }
+    else if (prevRss == 4){
+			$('.from_hide').fadeOut();
+      $('.from_4').fadeIn(); 
+    }
+    else if (prevRss == 5){
+			$('.from_hide').fadeOut();
+      $('.from_5').fadeIn(); 
+    }
+    else if (prevRss == 6){
+			$('.from_hide').fadeOut();
+      $('.from_6').fadeIn(); 
+    }
+    else if (prevRss == 7){
+			$('.from_hide').fadeOut();
+      $('.from_7').fadeIn(); 
+    }
+    else if (prevRss == 8){
+			$('.from_hide').fadeOut();
+      $('.from_8').fadeIn(); 
+    }
+    else if (prevRss == 9){
+			$('.from_hide').fadeOut();
+      $('.from_9').fadeIn(); 
+    }
+    else if (prevRss == 10){
+			$('.from_hide').fadeOut();
+      $('.from_10').fadeIn(); 
+    }
+    else if (prevRss == 11){
+			$('.from_hide').fadeOut();
+      $('.from_11').fadeIn(); 
+    }
+    else if (prevRss == 12){
+			$('.from_hide').fadeOut();
+      $('.from_12').fadeIn(); 
+    }
+    else if (prevRss == 13){
+			$('.from_hide').fadeOut();
+      $('.from_13').fadeIn(); 
+    }
+    else if (prevRss == 14){
+      $('.from_14').fadeIn(); 
+    }
+    else if (prevRss == 15){
+			$('.from_hide').fadeOut();
+      $('.from_15').fadeIn(); 
+    }
+    else if (prevRss == 16){
+			$('.from_hide').fadeOut();
+      $('.from_16').fadeIn(); 
+    }
+    else if (prevRss == 17){
+			$('.from_hide').fadeOut();
+      $('.from_17').fadeIn(); 
     }
     else{ 
 			$('.from_1').fadeOut();
       $('.from_2').fadeOut();
+      $('.from_3').fadeOut();
+      $('.from_4').fadeOut();
+      $('.from_5').fadeOut();
+      $('.from_6').fadeOut();
+      $('.from_7').fadeOut();
+      $('.from_8').fadeOut();
+      $('.from_9').fadeOut();
+      $('.from_10').fadeOut();
+      $('.from_11').fadeOut();
+      $('.from_12').fadeOut();
+      $('.from_13').fadeOut();
+      $('.from_14').fadeOut();
+      $('.from_15').fadeOut();
+      $('.from_16').fadeOut();
+      $('.from_17').fadeOut();
 		}
 		
 
@@ -153,15 +230,92 @@
 		$('.tabs_area ul li a p').removeClass('active');
 		$('.'+prevRss).find('p').addClass('active') ;
 
-		if(prevRss == 1){
+
+    if(prevRss == 1){ 
+			$('.from_hide').fadeOut();
 			$('.from_1').fadeIn();
 		}
     else if (prevRss == 2){
-      $('.from_2').fadeIn();
+			$('.from_hide').fadeOut();
+      $('.from_2').fadeIn(); 
+    }
+    else if (prevRss == 3){
+			$('.from_hide').fadeOut();
+      $('.from_3').fadeIn(); 
+    }
+    else if (prevRss == 4){
+			$('.from_hide').fadeOut();
+      $('.from_4').fadeIn(); 
+    }
+    else if (prevRss == 5){
+			$('.from_hide').fadeOut();
+      $('.from_5').fadeIn(); 
+    }
+    else if (prevRss == 6){
+			$('.from_hide').fadeOut();
+      $('.from_6').fadeIn(); 
+    }
+    else if (prevRss == 7){
+			$('.from_hide').fadeOut();
+      $('.from_7').fadeIn(); 
+    }
+    else if (prevRss == 8){
+			$('.from_hide').fadeOut();
+      $('.from_8').fadeIn(); 
+    }
+    else if (prevRss == 9){
+			$('.from_hide').fadeOut();
+      $('.from_9').fadeIn(); 
+    }
+    else if (prevRss == 10){
+			$('.from_hide').fadeOut();
+      $('.from_10').fadeIn(); 
+    }
+    else if (prevRss == 11){
+			$('.from_hide').fadeOut();
+      $('.from_11').fadeIn(); 
+    }
+    else if (prevRss == 12){
+			$('.from_hide').fadeOut();
+      $('.from_12').fadeIn(); 
+    }
+    else if (prevRss == 13){
+			$('.from_hide').fadeOut();
+      $('.from_13').fadeIn(); 
+    }
+    else if (prevRss == 14){
+      $('.from_14').fadeIn(); 
+    }
+    else if (prevRss == 15){
+			$('.from_hide').fadeOut();
+      $('.from_15').fadeIn(); 
+    }
+    else if (prevRss == 16){
+			$('.from_hide').fadeOut();
+      $('.from_16').fadeIn(); 
+    }
+    else if (prevRss == 17){
+			$('.from_hide').fadeOut();
+      $('.from_17').fadeIn(); 
     }
     else{ 
 			$('.from_1').fadeOut();
       $('.from_2').fadeOut();
+      $('.from_3').fadeOut();
+      $('.from_4').fadeOut();
+      $('.from_5').fadeOut();
+      $('.from_6').fadeOut();
+      $('.from_7').fadeOut();
+      $('.from_8').fadeOut();
+      $('.from_9').fadeOut();
+      $('.from_10').fadeOut();
+      $('.from_11').fadeOut();
+      $('.from_12').fadeOut();
+      $('.from_13').fadeOut();
+      $('.from_14').fadeOut();
+      $('.from_15').fadeOut();
+      $('.from_16').fadeOut();
+      $('.from_17').fadeOut();
 		}
 
 		return false;
