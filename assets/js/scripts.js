@@ -20,14 +20,24 @@
 	$(document).on('click','.tabs_area ul li a', function (){
 		$('.tabs_area ul li a p').removeClass('active');
 		$(this).find('p').addClass('active') ;
-		var prevRss = $(this).find('span').html() ; 
- 
+		var prevRss = $(this).attr('class') ;  
+     
+
+    for (let index = 1; index <= prevRss; index++) {  
+			$('.'+index).find('span').html('<i class="fa-solid fa-circle-check fa_sk_check"></i>');
+      
+      for (let i = prevRss; i <= 17; i++) {  
+			    $('.'+i).find('span').html(i);
+      }
+    }
+
+
 
     if(prevRss == 1){ 
 			$('.from_hide').fadeOut();
 			$('.from_1').fadeIn();
 		}
-    else if (prevRss == 2){
+    else if (prevRss == 2){ 
 			$('.from_hide').fadeOut();
       $('.from_2').fadeIn(); 
     }
@@ -76,6 +86,7 @@
       $('.from_13').fadeIn(); 
     }
     else if (prevRss == 14){
+			$('.from_hide').fadeOut();
       $('.from_14').fadeIn(); 
     }
     else if (prevRss == 15){
@@ -115,8 +126,17 @@
 
 	$(document).on('click','.next_btn', function (){
 
-		var prevRs = $('.tabs_area ul li a p.active').closest('a').find('span').html();
+		var prevRs = $('.tabs_area ul li a p.active').closest('a').attr('class');
 		var prevRss = parseInt(prevRs)  + 1; 
+
+    
+    for (let index = 1; index <= prevRss; index++) {  
+			$('.'+index).find('span').html('<i class="fa-solid fa-circle-check fa_sk_check"></i>');
+      
+      for (let i = prevRss; i <= 17; i++) {  
+			    $('.'+i).find('span').html(i);
+      }
+    }
 
 		if(prevRss > 17 ){
 			prevRss = 1; 
@@ -180,6 +200,7 @@
       $('.from_13').fadeIn(); 
     }
     else if (prevRss == 14){
+			$('.from_hide').fadeOut();
       $('.from_14').fadeIn(); 
     }
     else if (prevRss == 15){
@@ -219,8 +240,17 @@
 	});
 	$(document).on('click','.prev_btn', function (){  
 		
-		var prevRs = $('.tabs_area ul li a p.active').closest('a').find('span').html();
+		var prevRs = $('.tabs_area ul li a p.active').closest('a').attr('class');
 		var prevRss = parseInt(prevRs)  - 1; 
+
+    
+    for (let index = 1; index <= prevRss; index++) {  
+			$('.'+index).find('span').html('<i class="fa-solid fa-circle-check fa_sk_check"></i>');
+      
+      for (let i = prevRss; i <= 17; i++) {  
+			    $('.'+i).find('span').html(i);
+      }
+    }
 
 		if(prevRss < 1 ){
 			prevRss = 1; 
@@ -284,6 +314,7 @@
       $('.from_13').fadeIn(); 
     }
     else if (prevRss == 14){
+			$('.from_hide').fadeOut();
       $('.from_14').fadeIn(); 
     }
     else if (prevRss == 15){

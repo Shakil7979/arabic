@@ -39,6 +39,9 @@
         z-index: 99;
         padding: 25px 0;
     }
+    .tabs_area ul li a p { 
+        font-size: 14px;
+    }
     .firstPage_row { 
         flex-direction: column;
     }
@@ -75,8 +78,15 @@
 	.banner_header h2 { 
         font-size: 25px; 
     }
+    .frm_16_text_item {
+        flex: 0 0 100% !important;
+        margin-bottom: 12px;
+    }
     .banner_header p { 
         font-size: 14px;
+    }
+    .download_area {
+        width: 100%; 
     }
     .banner_area {
         margin-bottom: 35px;
@@ -140,6 +150,10 @@
 @media all and (max-width: 575px){
 	.user_menu ul li a, .main_menu ul li a { 
         font-size: 14px; 
+    }
+    .third_form { 
+        border-radius: 15px;
+        padding: 19px 18px 18px 18px;
     }
     #barGraph svg {
         width: 380px;
