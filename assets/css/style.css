@@ -302,9 +302,9 @@
  }
  
  .header_form_main {
-	 background: url(../images/bg.jpeg) no-repeat scroll center center / 100% 100%;
-	 padding: 25px 0;
- }
+	background: url("../images/kfcabg.png") no-repeat scroll center center / 100% 100%;
+	padding: 25px 0;
+}
  
  .header_form {
 	 display: -webkit-box;
@@ -1547,6 +1547,10 @@
 .fa_sk_check {
 	color: #0C66E1;
 	font-size: 21px;
+}
+
+.donwl_18_item .download_area{
+	width: 100% !important;
 }
 
 

@@ -26,7 +26,7 @@
     for (let index = 1; index <= prevRss; index++) {  
 			$('.'+index).find('span').html('<i class="fa-solid fa-circle-check fa_sk_check"></i>');
       
-      for (let i = prevRss; i <= 17; i++) {  
+      for (let i = prevRss; i <= 18; i++) {  
 			    $('.'+i).find('span').html(i);
       }
     }
@@ -101,6 +101,10 @@
 			$('.from_hide').fadeOut();
       $('.from_17').fadeIn(); 
     }
+    else if (prevRss == 18){
+			$('.from_hide').fadeOut();
+      $('.from_18').fadeIn(); 
+    }
     else{ 
 			$('.from_1').fadeOut();
       $('.from_2').fadeOut();
@@ -119,6 +123,7 @@
       $('.from_15').fadeOut();
       $('.from_16').fadeOut();
       $('.from_17').fadeOut();
+      $('.from_18').fadeOut();
 		}
 
 		return false;
@@ -133,12 +138,12 @@
     for (let index = 1; index <= prevRss; index++) {  
 			$('.'+index).find('span').html('<i class="fa-solid fa-circle-check fa_sk_check"></i>');
       
-      for (let i = prevRss; i <= 17; i++) {  
+      for (let i = prevRss; i <= 18; i++) {  
 			    $('.'+i).find('span').html(i);
       }
     }
 
-		if(prevRss > 17 ){
+		if(prevRss > 18 ){
 			prevRss = 1; 
 		}
 		
@@ -215,6 +220,10 @@
 			$('.from_hide').fadeOut();
       $('.from_17').fadeIn(); 
     }
+    else if (prevRss == 18){
+			$('.from_hide').fadeOut();
+      $('.from_18').fadeIn(); 
+    }
     else{ 
 			$('.from_1').fadeOut();
       $('.from_2').fadeOut();
@@ -233,6 +242,7 @@
       $('.from_15').fadeOut();
       $('.from_16').fadeOut();
       $('.from_17').fadeOut();
+      $('.from_18').fadeOut();
 		}
 		
 
@@ -329,6 +339,10 @@
 			$('.from_hide').fadeOut();
       $('.from_17').fadeIn(); 
     }
+    else if (prevRss == 18){
+			$('.from_hide').fadeOut();
+      $('.from_18').fadeIn(); 
+    }
     else{ 
 			$('.from_1').fadeOut();
       $('.from_2').fadeOut();
@@ -347,6 +361,7 @@
       $('.from_15').fadeOut();
       $('.from_16').fadeOut();
       $('.from_17').fadeOut();
+      $('.from_18').fadeOut();
 		}
 
 		return false;
