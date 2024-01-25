@@ -594,7 +594,7 @@ function createPie(id) {
     dataElement   = id + " .pie-chart__legend"
 
     color         = [
-      "#0C66E1", 
+      "#0f8693", 
     ];
 
   color = shuffle( color );
@@ -735,7 +735,7 @@ svg.selectAll("bar")
   .data(data)
   .enter()
   .append("rect")
-  .style("fill", "#0C66E1")
+  .style("fill", "#0f8693")
   .attr("x", function(d) {
     return x(d.name);
   })

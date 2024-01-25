@@ -1557,7 +1557,13 @@
 .frm_8_text_item.frm_14_flex {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 16px;
+	gap: 30px;
+}
+
+.parcent_nmbr {
+	color: #CCCCCC;
+	font-size: 12px;
+	margin-top: 10px; 
 }
 
 .frm_14_mrg{
@@ -1692,7 +1698,27 @@
 	font-size: 20px;
 }
 
+g.tick text { 
+	display: none;
+}
 
+.cart_item_2{
+	position: relative;
+}
+
+.graph_ul li p {
+	color: #3E4151;
+	font-size: 10px;
+}
+
+.graph_ul {
+	display: flex;
+	position: absolute;
+	bottom: 97px;
+	gap: 10px;
+	text-align: center;
+	right: 10px;
+}
 
  /*======================  Home Page CSS  ======================*/
  
