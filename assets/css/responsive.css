@@ -82,6 +82,17 @@
         flex: 0 0 100% !important;
         margin-bottom: 12px;
     }
+    .popup_main_2 {  
+        height: 700px !important;
+    }
+
+    .popup_main { 
+        height: 400px; 
+    }
+    
+    .popup_main_3 { 
+        height: auto !important;
+    }
     .banner_header p { 
         font-size: 14px;
     }

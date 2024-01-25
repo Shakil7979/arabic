@@ -1009,8 +1009,26 @@
  }
  
  .form_btn .btn_1{
-	 width: 198px;
-	 height: 48px;
+	width: inherit !important;
+	padding: 9px 25px ; 
+	 background: #0f8693;
+	 border: none;
+	 border-radius: 5px; 
+	 display: -webkit-box; 
+	 display: -ms-flexbox; 
+	 display: flex;
+	 -webkit-box-pack: center;
+		 -ms-flex-pack: center;
+			 justify-content: center;
+	 -webkit-box-align: center;
+		 -ms-flex-align: center;
+			 align-items: center;
+	 height: 47px; 
+	 font-size: 14px;
+	 color: #fff;
+	 -webkit-transition: 0.3s;
+	 -o-transition: 0.3s;
+	 transition: 0.3s;
  }
  
  .form_btn .btn_2{
@@ -1505,6 +1523,16 @@
 	position: absolute;
 	left: 10px;
 	top: 40px;
+	font-size: 14px;
+	text-decoration: underline;
+}
+
+.frm_8_text_itemss.frm_14_itemdd {
+	flex: 0 0 17%;
+}
+
+.frm_8_text_item.frm_14_flex.frm_felx_14 {
+	margin-top: 15px;
 }
 
 .frm_13_text{
@@ -1556,6 +1584,114 @@
 .download_icon li a i {
 	color: #0f8693;
 }
+
+.popup_main_3,
+.popup_main_2,
+.popup_main {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	z-index: 99;
+	background: #fff;
+	width: 100%;
+	max-width: 851px;
+	border-radius: 28px;
+	height: 336px;
+	padding: 24px 43px;
+	display: none;
+	width: 100%;
+}
+
+.popup_main_3{
+	/* display: block; */
+}
+
+.edit_delete {
+	height: 48px;
+}
+
+.popup_main_2 { 
+	max-width: 665px !important;
+	height: 471px !important;
+}
+
+.popup_main_3 {
+	max-width: 992px !important;
+	height: 610px !important;
+}
+
+.popup_main_3 .frm_item{
+	flex:  0 0 auto !important;
+}
+
+.popup_overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #CCCCCC;
+	opacity: 0.65;
+	z-index: 9;
+	display: none;
+}
+
+.popup_main_2 .download_area {
+	width: 100%;
+	margin-bottom: 21px;
+}
+
+.frm_1_popup_btn{
+	/* display: none; */
+}
+
+.popup_main_2 .popup_btn ul { 
+	margin-top: 0;
+}
+
+.frm_group.hidden_frm_group {
+	padding-right: 23px;
+}
+
+.frm_group.hidden_frm_group p {
+	color: #646984;
+	font-size: 14px;
+	height: 40px ;
+}
+
+.popup_content .btn_1,
+.popup_content .btn_2 {
+	width: 126px !important;
+	height: 48px !important;
+}
+
+.popup_btn ul {
+	display: flex; 
+	gap: 12px;
+	justify-content: flex-end;
+	margin-top: 46px;
+}
+
+.popup_close {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 36px;
+}
+
+.popup_close h4 {
+	color: #252836;
+	font-size: 24px;
+}
+
+.popup_close a i {
+	color: #252836;
+	font-size: 20px;
+}
+
 
 
  /*======================  Home Page CSS  ======================*/

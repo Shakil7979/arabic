@@ -87,7 +87,7 @@
                 <div class="container">
                     <div class="banner_header">
                         <p>الصفحة الرئيسية / المنافسات / فتح العروض / إنشاء منافسة</p>
-                        <h2>انشاء منافسة</h2>
+                        <h2 class="page_title_text">انشاء منافسة</h2>
                     </div>
                     <div class="tabs_area">
                         <ul>
@@ -287,7 +287,7 @@
                                     <div class="table_data">
                                         <div class="table_title_flex">
                                             <h4>احدث المنافسات</h4>
-                                            <a href="#" class="btn_1">إضافة متنافس</a>
+                                            <a href="#" class="btn_1 popup_1">إضافة متنافس</a>
                                         </div>
                                         <table class="table table-striped"> 
                                             <tbody>
@@ -995,9 +995,8 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="frm_group hidden_frm_group">
-                                        <label for="">الرقم المرجعي بمنصة اعتماد</label> <br>
-                                        
-                                        <input type="text" name="" placeholder="4">
+                                        <label for="">عدد المتنافسين</label> <br>
+                                        <p>يقوم النظام باحتساب العدد طبقا لما تم احالته</p> 
                                     </div>
                                 </div>
                                 <div class="col-md-12"> 
@@ -1328,11 +1327,11 @@
                                 <div class="col-md-12">
                                     <div class="frm_8_text"> 
                                         <div class="frm_8_text_item">
-                                            <h4>عدد العروض المالية المحالة</h4>
+                                            <h4>عدد المتنافسين المتقدمين</h4>
                                             <p>يقوم النظام باحتساب العدد طبقا لما تم احالته</p>
                                         </div>
                                         <div class="frm_8_text_item">
-                                            <h4>عدد العروض المالية المحالة</h4>
+                                            <h4>عدد المتنافسين المطلوب تأهيلهم</h4>
                                             <p>يقوم النظام باحتساب العدد طبقا لما تم احالته</p>
                                         </div>
                                     </div>
@@ -1479,7 +1478,7 @@
                                                 <td>
                                                     <div class="time_check"> 
                                                         <a class="check_icon check_merun" href="#"><i class="fa-regular fa-circle-check"></i></a>
-                                                        <a href="#" class="times_icon"><i class="fa-regular fa-circle-xmark"></i></a>
+                                                        <a href="#" class="times_icon times_checked"><i class="fa-regular fa-circle-xmark"></i></a>
                                                     </div>
                                                 </td>  
                                                 <td>
@@ -1500,7 +1499,7 @@
                                                 <td>
                                                     <div class="time_check"> 
                                                         <a class="check_icon check_merun" href="#"><i class="fa-regular fa-circle-check"></i></a>
-                                                        <a href="#" class="times_icon"><i class="fa-regular fa-circle-xmark"></i></a>
+                                                        <a href="#" class="times_icon times_checked"><i class="fa-regular fa-circle-xmark"></i></a>
                                                     </div>
                                                 </td>  
                                                 <td>
@@ -1542,11 +1541,11 @@
                                 <div class="col-md-12">
                                     <div class="frm_8_text"> 
                                         <div class="frm_8_text_item">
-                                            <h4>عدد العروض المالية المحالة</h4>
+                                            <h4>عدد المتنافسين المتقدمين</h4>
                                             <p>يقوم النظام باحتساب العدد طبقا لما تم احالته</p>
                                         </div>
                                         <div class="frm_8_text_item">
-                                            <h4>عدد العروض المالية المحالة</h4>
+                                            <h4>عدد المتنافسين المطلوب تأهيلهم</h4>
                                             <p>يقوم النظام باحتساب العدد طبقا لما تم احالته</p>
                                         </div>
                                     </div>
@@ -1585,11 +1584,11 @@
                                 
                                 <div class="col-md-6">
                                     <div class="frm_group">
-                                        <label for="">المدة الزمنية لمهمة التأهيل</label> <br>
+                                        <label for="">اسم المورد المعتمد</label> <br>
                                         <select name="" id="">
-                                            <option value="">123</option>
-                                            <option value="">123</option>
-                                            <option value="">123</option>
+                                            <option value="">125</option>
+                                            <option value="">125</option>
+                                            <option value="">125</option> 
                                         </select> 
                                     </div>
                                 </div>
@@ -1669,8 +1668,8 @@
                                 <div class="col-md-12">
                                     <div class="frm_8_text">  
                                         <div class="frm_8_text_item">
-                                            <h4>عدد العروض المالية المحالة</h4>
-                                            <p>يقوم النظام باحتساب العدد طبقا لما تم احالته</p>
+                                            <h4>قيمة الارتباط. التعاقدي</h4>
+                                            <p>يقوم النظام بإدراج القيمة طبقا لما تم احالته</p>
                                         </div>
                                     </div>
                                 </div>
@@ -1794,15 +1793,15 @@
                                         </div>
                                         <div class="frm_8_text_item frm_item_12">
                                             <h4>اسم المنافسة</h4>
-                                            <p>اسم المنافسة</p>
+                                            <p>رقم المنافسة</p>
                                         </div>
                                         <div class="frm_8_text_item frm_item_12">
                                             <h4>الرقم المرجعي بمنصة اعتماد</h4>
-                                            <p>الرقم المرجعي بمنصة اعتماد</p>
+                                            <p>الرقم المرجعي </p>
                                         </div>
                                         <div class="frm_8_text_item frm_item_12">
                                             <h4>قيمة الارتباط. التعاقدي</h4>
-                                            <p>قيمة الارتباط. التعاقدي</p>
+                                            <p>قيمة الارتباط</p>
                                         </div>
                                     </div>
                                 </div>
@@ -1811,7 +1810,7 @@
                                     <div class="frm_group"> 
                                         <label for="">رقم البند</label> <br> 
                                         <input type="text" placeholder="1236">
-                                        <span class="frm_span_position">تعديل</span>
+                                        <a href="#" class="frm_span_position">تعديل</A>
                                     </div>
                                 </div>  
 
@@ -1819,7 +1818,7 @@
                                     <div class="frm_group"> 
                                         <label for="">اسم البند</label> <br> 
                                         <input type="text" placeholder="اسم البند">
-                                        <span class="frm_span_position">تعديل</span>
+                                        <a href="#" class="frm_span_position">تعديل</A>
                                     </div>
                                 </div>  
                                  
@@ -1953,38 +1952,43 @@
                                                 <p>يقوم النظام بإدراج الاسم طبقا لما تم احالته</p>
                                             </div>
                                         </div> 
-                                        <div class="frm_8_text_item frm_14_flex">
-                                            <div class="frm_8_text_itemss">
-                                                <h4>اسم المنافسة</h4>
-                                                <p>اسم المنافسة</p>
+                                        <div class="left_14_item"> 
+                                            <div class="frm_8_text_item frm_14_flex">
+                                                <div class="frm_8_text_itemss">
+                                                    <h4>اسم المنافسة</h4>
+                                                    <p>اسم المنافسة</p>
+                                                </div>
+                                                <div class="frm_8_text_itemss">
+                                                    <h4>الرقم المرجعي بمنصة اعتماد</h4>
+                                                    <p>الرقم المرجعي</p>
+                                                </div>
+                                                <div class="frm_8_text_itemss">
+                                                    <h4>قيمة العرض المالي للمورد المتأهل</h4>
+                                                    <p>قيمة العرض </p>
+                                                </div> 
+                                            </div> 
+                                            <div class="frm_8_text_item frm_14_flex frm_felx_14">
+                                                <div class="frm_8_text_itemss frm_14_itemdd">
+                                                    <h4>رقم البند</h4>
+                                                    <p>رقم البند</p>
+                                                </div>
+                                                <div class="frm_8_text_itemss">
+                                                    <h4>اسم المورد المتأهل</h4>
+                                                    <p>يقوم النظام بإدراج الاسم طبقا لما تم احالته</p>
+                                                </div>
                                             </div>
-                                            <div class="frm_8_text_itemss">
-                                                <h4>الرقم المرجعي بمنصة اعتماد</h4>
-                                                <p>الرقم المرجعي</p>
-                                            </div>
-                                            <div class="frm_8_text_itemss">
-                                                <h4>قيمة العرض المالي للمورد المتأهل</h4>
-                                                <p>قيمة العرض </p>
-                                            </div>
-                                            <div class="frm_8_text_itemss">
-                                                <h4>رقم البند</h4>
-                                                <p>رقم البند</p>
-                                            </div>
-                                            <div class="frm_8_text_itemss">
-                                                <h4>اسم المورد المتأهل</h4>
-                                                <p>يقوم النظام بإدراج الاسم طبقا لما تم احالته</p>
-                                            </div>
-                                        </div> 
+                                        </div>
+                                        
                                     </div>
                                 </div> 
                                 <div class="col-md-5"> 
                                     <div class="download_itemsss"> 
                                         <div class="link_title">
-                                            <h4>ارفاق تقرير التقييم الفني</h4>
+                                            <h4>الاطلاع على محضر الترسية</h4>
                                         </div>
                                         <div class="download_area">
                                             <div class="right_dowloadn">
-                                                <h4>شروط المنافسة</h4>
+                                                <h4>تقرير اعتماد المورد</h4>
                                                 <p>عرض فني</p>
                                                 <p>PDF</p>
                                             </div>
@@ -2034,52 +2038,52 @@
                                 </div> 
                                 <div class="col-md-6">
                                     <div class="frm_group">
-                                        <label for="">رقم المنافسة</label> <br>
+                                        <label for="">اسم المنافسة</label> <br>
                                         <select name="" id="">
-                                            <option value="">123</option>
-                                            <option value="">123</option>
-                                            <option value="">123</option>
+                                            <option value="">اسم المنافسة</option>
+                                            <option value="">اسم المنافسة</option>
+                                            <option value="">اسم المنافسة</option> 
                                         </select> 
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="frm_group">
-                                        <label for="">الرقم المرجعي بمنصة اعتماد</label> <br>
+                                        <label for="">رقم المنافسة</label> <br>
                                         <select name="" id="">
-                                            <option value="">125</option>
-                                            <option value="">125</option>
-                                            <option value="">125</option>
+                                            <option value="">123</option>
+                                            <option value="">123</option>
+                                            <option value="">123</option> 
                                         </select> 
                                     </div>
                                 </div> 
                                 
                                 <div class="col-md-6">
                                     <div class="frm_group">
-                                        <label for="">المدة الزمنية لمهمة اعتماد الميزانية</label> <br>
+                                        <label for="">الرقم المرجعي بمنصة اعتماد</label> <br>
                                         <select name="" id="">
-                                            <option value="">123</option>
-                                            <option value="">123</option>
-                                            <option value="">123</option>
+                                            <option value="">125</option>
+                                            <option value="">125</option>
+                                            <option value="">125</option> 
                                         </select> 
                                     </div>
                                 </div> 
                                 <div class="col-md-6">
                                     <div class="frm_group">
-                                        <label for="">رقم البند</label> <br>
+                                        <label for="">المدة الزمنية لمهمة إصدار خطاب التعميد</label> <br>
                                         <select name="" id="">
-                                            <option value="">1236</option> 
-                                            <option value="">1236</option> 
-                                            <option value="">1236</option> 
+                                            <option value="">125</option>
+                                            <option value="">125</option>
+                                            <option value="">125</option>
                                         </select> 
                                     </div>
                                 </div> 
                                 <div class="col-md-6">
                                     <div class="frm_group">
-                                        <label for="">فريق العمل</label> <br>
+                                        <label for="">إسناد المهمة إلى</label> <br>
                                         <select name="" id="">
-                                            <option value="">الشخص المسؤول</option>
-                                            <option value="">الشخص المسؤول</option>
-                                            <option value="">الشخص المسؤول</option>
+                                            <option value="">اختر الشخص المسؤول</option>
+                                            <option value="">اختر الشخص المسؤول</option>
+                                            <option value="">اختر الشخص المسؤول</option>
                                         </select> 
                                     </div>
                                 </div> 
@@ -2097,11 +2101,11 @@
                                     <div class="frm_11_flex">
                                         <div class="download_itemsss"> 
                                             <div class="link_title">
-                                                <h4>ارفاق تقرير التقييم الفني</h4>
+                                                <h4>الاطلاع على تقرير اعتماد المورد</h4>
                                             </div>
                                             <div class="download_area">
                                                 <div class="right_dowloadn">
-                                                    <h4>شروط المنافسة</h4>
+                                                    <h4>تقرير اعتماد المورد</h4>
                                                     <p>عرض فني</p>
                                                     <p>PDF</p>
                                                 </div>
@@ -2127,7 +2131,7 @@
                                     <div class="frm_8_text">   
                                         <div class="frm_8_text_item frm_16_text_item">
                                             <div class="frm_8_text_item">
-                                                <h4>صاحب صلاحية الاعتماد</h4>
+                                                <h4>اسم المورد الفائز بالمنافسة</h4>
                                                 <p>يقوم النظام بإدراج الاسم طبقا لما تم احالته</p>
                                             </div>
                                             <div class="frm_8_text_item frm_14_mrg">
@@ -2151,8 +2155,8 @@
                                                 <p>قيمة المشروع بمحضر الترسية</p>
                                             </div>
                                             <div class="frm_8_text_item frm_14_mrg">
-                                                <h4>قيمة المشروع بمحضر الترسية</h4>
-                                                <p>قيمة المشروع بمحضر الترسية</p>
+                                                <h4>قيمة المشروع بخطاب التعميد</h4>
+                                                <p>قيمة المشروع بخطاب التعميد</p>
                                             </div>
                                         </div>  
                                     </div>
@@ -2228,7 +2232,7 @@
                                                 </div>
                                                 <div class="download_area">
                                                     <div class="right_dowloadn">
-                                                        <h4>شروط المنافسة</h4>
+                                                        <h4>تقرير اعتماد المورد</h4>
                                                         <p>عرض فني</p>
                                                         <p>PDF</p>
                                                     </div>
@@ -2252,7 +2256,7 @@
                                     <div class="frm_8_text">   
                                         <div class="frm_8_text_item frm_16_text_item">
                                             <div class="frm_8_text_item">
-                                                <h4>صاحب صلاحية الاعتماد</h4>
+                                                <h4>اسم المورد الفائز بالمنافسة</h4>
                                                 <p>يقوم النظام بإدراج الاسم طبقا لما تم احالته</p>
                                             </div>
                                             <div class="frm_8_text_item frm_14_mrg">
@@ -2262,7 +2266,7 @@
                                         </div>  
                                         <div class="frm_8_text_item frm_16_text_item">
                                             <div class="frm_8_text_item">
-                                                <h4>تاريخ اعتماد محضر الترسية من صاحب الصلاحية</h4>
+                                                <h4>تاريخ إرفاق خطاب التعميد</h4>
                                                 <p>يقوم النظام بإدراج الاسم طبقا لما تم احالته</p>
                                             </div>
                                             <div class="frm_8_text_item frm_14_mrg">
@@ -2272,8 +2276,8 @@
                                         </div>  
                                         <div class="frm_8_text_item frm_16_text_item">
                                             <div class="frm_8_text_item">
-                                                <h4>قيمة المشروع بمحضر الترسية</h4>
-                                                <p>قيمة المشروع بمحضر الترسية</p>
+                                                <h4>قيمة المشروع بخطاب التعميد</h4>
+                                                <p>قيمة المشروع بخطاب التعميد</p>
                                             </div> 
                                         </div>  
                                     </div>
@@ -2324,7 +2328,7 @@
                                 <div class="col-md-6"> 
                                     <div class="frm_10_col">
                                         <div class="link_title">
-                                            <h4>إرفاق خطاب التعميد</h4>
+                                            <h4>إرفاق العقد الخاص بالمشروع</h4>
                                         </div>
                                         <div class="files_area">
                                             <div class="link_area">
@@ -2345,11 +2349,11 @@
                                         <div class="col-md-6">
                                             <div class="download_itemsss"> 
                                                 <div class="link_title">
-                                                    <h4>الاطلاع على محضر الترسية</h4>
+                                                    <h4>الاطلاع على خطاب التعميد</h4>
                                                 </div>
                                                 <div class="download_area">
                                                     <div class="right_dowloadn">
-                                                        <h4>شروط المنافسة</h4>
+                                                        <h4>تقرير اعتماد المورد</h4>
                                                         <p>عرض فني</p>
                                                         <p>PDF</p>
                                                     </div>
@@ -2480,9 +2484,9 @@
                         </div>
                     </div>
                     <div class="form_btn">   
-                        <a href="#">ربط المنافسة بطلب احتياج  </a>
+                        <a href="#" class="frm_1_popup_btn">ربط المنافسة بطلب احتياج  </a>
                         <ul>
-                            <li><a href="#" class="btn_1 next_btn">التالى</a></li>
+                            <li><a href="#" class="btn_1 next_btn next_btn_text">التالى</a></li>
                             <li><a href="second.html" class="btn_3 ">حفظ</a></li>
                             <li><a href="#" class="btn_2 prev_btn">إلغاء</a></li>
                         </ul>
@@ -2491,6 +2495,224 @@
             </section>
             <!--=====================  End Banner Area  ====================--> 
         </main> 
+
+        <div class="popup_overlay"></div>
+
+        <div class="popup_main">
+            <div class="popup_body">
+                <div class="popup_close">
+                    <h4>إضافة متنافس</h4>
+                    <a href="#"><i class="fas fa-times"></i></a>
+                </div>
+                <div class="popup_content">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="frm_group">
+                                <label for="">اسم المتنافس</label> <br>
+                                <input type="text" placeholder="اسم المتنافس">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="frm_group">
+                                <label for="">رقم السجل التجاري</label> <br>
+                                <input type="text" placeholder="123">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup_btn">
+                        <ul>
+                            <li><a href="#" class="btn_1 popup_save">حفظ</a></li>
+                            <li><a href="#" class="btn_2">إلغاء</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup_main_2">
+            <div class="popup_body">
+                <div class="popup_close">
+                    <h4>المرفقات</h4>
+                    <a href="#"><i class="fas fa-times"></i></a>
+                </div>
+                <div class="popup_content">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="download_area">
+                                <div class="right_dowloadn">
+                                    <h4>شروط المنافسة</h4>
+                                    <p>عرض فني</p>
+                                    <p>PDF</p>
+                                </div>
+                                <div class="download_icons">
+                                    <i class="fa-solid fa-download"></i>
+                                    <p>243 ك.ب</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="download_area">
+                                <div class="right_dowloadn">
+                                    <h4>شروط المنافسة</h4>
+                                    <p>عرض فني</p>
+                                    <p>PDF</p>
+                                </div>
+                                <div class="download_icons">
+                                    <i class="fa-solid fa-download"></i>
+                                    <p>243 ك.ب</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="download_area">
+                                <div class="right_dowloadn">
+                                    <h4>شروط المنافسة</h4>
+                                    <p>عرض فني</p>
+                                    <p>PDF</p>
+                                </div>
+                                <div class="download_icons">
+                                    <i class="fa-solid fa-download"></i>
+                                    <p>243 ك.ب</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="download_area">
+                                <div class="right_dowloadn">
+                                    <h4>شروط المنافسة</h4>
+                                    <p>عرض فني</p>
+                                    <p>PDF</p>
+                                </div>
+                                <div class="download_icons">
+                                    <i class="fa-solid fa-download"></i>
+                                    <p>243 ك.ب</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="download_area">
+                                <div class="right_dowloadn">
+                                    <h4>شروط المنافسة</h4>
+                                    <p>عرض فني</p>
+                                    <p>PDF</p>
+                                </div>
+                                <div class="download_icons">
+                                    <i class="fa-solid fa-download"></i>
+                                    <p>243 ك.ب</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup_btn">
+                        <ul> 
+                            <li><a href="#" class="btn_2">إلغاء</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup_main_3">
+            <div class="popup_body">
+                <div class="popup_close">
+                    <h4>ربط المنافسة بطلب احتياج</h4>
+                    <a href="#"><i class="fas fa-times"></i></a>
+                </div>
+                <div class="popup_content">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="frm_group"> 
+                                <label for="">اسم المنافسة</label> <br> 
+                                <select name="" id="">
+                                    <option value="">اسم المنافسة</option> 
+                                    <option value="">اسم المنافسة</option> 
+                                    <option value="">اسم المنافسة</option>  
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="frm_group"> 
+                                <label for="">رقم المنافسة</label> <br> 
+                                <select name="" id="">
+                                    <option value="">123</option> 
+                                    <option value="">123</option> 
+                                    <option value="">123</option> 
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="frm_group"> 
+                                <label for="">الرقم المرجعي بمنصة اعتماد</label> <br> 
+                                <select name="" id="">
+                                    <option value="">125</option> 
+                                    <option value="">125</option> 
+                                    <option value="">125</option>  
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="frm_group"> 
+                                <label for="">نوع المنافسة</label> <br> 
+                                <select name="" id="">
+                                    <option value="">اختر نوع المنافسة</option>
+                                    <option value="">اختر نوع المنافسة</option>
+                                    <option value="">اختر نوع المنافسة</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="frm_group"> 
+                                <label for="">طلب احتياج ذات صلة</label> <br> 
+                                <select name="" id="">
+                                    <option value="">اختر طلب الاحتياج</option> 
+                                    <option value="">اختر طلب الاحتياج</option> 
+                                    <option value="">اختر طلب الاحتياج</option> 
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="frm_group"> 
+                                <label for="">رقم احتياج ذات صلة</label> <br> 
+                                <select name="" id="">
+                                    <option value="">رقم طلب الاحتياج</option> 
+                                    <option value="">رقم طلب الاحتياج</option> 
+                                    <option value="">رقم طلب الاحتياج</option> 
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="frm_flex">
+                            <div class="frm_item">
+                                <h4>تاريخ اعتماد طلب الاحتياج</h4>
+                                <p>تاريخ اعتماد طلب الاحتياج</p>
+                            </div>
+                            <div class="frm_item">
+                                <h4>الجهة الطالبة</h4>
+                                <p>اسم الجهة</p>
+                            </div>
+                            <div class="frm_item">
+                                <h4>مسؤول الجهة الطالبة</h4>
+                                <p>مسؤول الجهة</p>
+                            </div>
+                            <div class="frm_item">
+                                <h4>الجهة المعتمدة</h4>
+                                <p>اسم الجهة</p>
+                            </div>
+                            <div class="frm_item">
+                                <h4>مسؤول الجهة المعتمدة</h4>
+                                <p>مسؤول الجهة</p>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="popup_btn">
+                        <ul> 
+                            <li><a href="#" class="btn_1">ربط</a></li>
+                            <li><a href="#" class="btn_2">إلغاء</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
  
 
 
