@@ -1220,7 +1220,7 @@
 	 position: absolute;
 	 top: 0;
 	 left: 0;
-	 background-color: #8AD000;
+	 background-color: #23CAC1;
 	 width: 200px;
 	 height: 200px;
 	 border-radius: 50%;
@@ -1249,7 +1249,7 @@
 	 height: 1.25em;
 	 margin-bottom: 0.7em;
 	 padding-left: 0.5em;
-	 border-left: 1.25em solid #8AD000;
+	 border-left: 1.25em solid #23CAC1;
    }
    .pie-chart__legend em {
 	 font-style: normal;
@@ -1373,7 +1373,7 @@
 }
 
 .check_cheked{
-	color: #8AD000 !important;
+	color: #23CAC1 !important;
 }
 
 .times_checked{
@@ -1477,7 +1477,7 @@
 }
 
 .check_merun{
-	color:  #8AD000 !important;
+	color:  #23CAC1 !important;
 }
 
 .frm_8_text {
@@ -1706,9 +1706,11 @@ g.tick text {
 	position: relative;
 }
 
+.grap_number li p,
 .graph_ul li p {
 	color: #3E4151;
 	font-size: 10px;
+	font-family: 'DIN Next LT Arabic';
 }
 
 .graph_ul {
@@ -1718,6 +1720,20 @@ g.tick text {
 	gap: 10px;
 	text-align: center;
 	right: 10px;
+}
+
+.grap_number {
+	position: absolute;
+	top: 73px;
+	left: 57px;
+	display: flex;
+	flex-direction: column;
+	gap: 26px;
+}	
+
+.pie-chart__legend em {
+	font-style: normal;
+	font-family: 'DIN Next LT Arabic';
 }
 
  /*======================  Home Page CSS  ======================*/
@@ -1731,3 +1747,37 @@ g.tick text {
  
   */
  
+
+  
+
+.cnasfu_upload input[type="file"] {
+	height: 0;
+	overflow: hidden;
+	width: 0;
+}
+.cnasfu_upload input[type="file"] + label {
+   background: transparent;
+   cursor: pointer;
+   display: inline-block;
+   font-size: inherit;
+   outline: none;
+   width: 112px;
+   height: 32px;
+   position: relative;
+   transition: all 0.3s;
+   vertical-align: middle;
+   background: transparent;
+   border: 1px solid #0f8693;
+   color: #0f8693;
+   border-radius: 5px;
+   font-size: 14px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.cnasfu_upload input[type="file"] + label:hover {
+	background-color: rgba(95, 153, 255, 0.1);
+}
+.cnasfu_upload {
+   display: flex;
+}

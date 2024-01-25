@@ -1,15 +1,22 @@
   
  
-	$(document).on('click','.link_area', function (){
-		$('.files_input').click();  
+ 
+ 
+
+
+  
+  // $(document).one('click','.link_area', function (event){
+  //   event.stopPropagation();
+	// 	$('.files_input').click();  
 		 
-		return false;
-	});
-	$(document).on('click','.files_btn', function (){
-		$('.files_input').click();  
+	// 	return false;
+	// });
+	// $(document).one('click','.files_btn', function (event){
+  //   event.stopPropagation();
+	// 	$('.files_input').click();  
 		 
-		return false;
-	});
+	// 	return false;
+	// });
 	$(document).on('click','.bars_icon', function (){
 		$('.main_menu').slideToggle();  
 		
