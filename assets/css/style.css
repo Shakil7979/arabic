@@ -1736,6 +1736,17 @@ g.tick text {
 	font-family: 'DIN Next LT Arabic';
 }
 
+
+.table_fltr {
+	color: #252836;
+	background: transparent;
+	border: none;
+	width: 122px;
+}
+
+
+
+
  /*======================  Home Page CSS  ======================*/
  
  

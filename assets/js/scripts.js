@@ -54,7 +54,7 @@
 		$('.popup_main_3').fadeIn();   
 		return false;
 	}); 
-	$(document).on('click','.popup_overlay , .popup_close a', function (){
+	$(document).on('click','.popup_overlay , .popup_close a, .popup_cls', function (){
 		$('.popup_overlay').fadeOut();  
 		$('.popup_main_3').fadeOut();   
 		return false;
@@ -62,155 +62,155 @@
 
   // Multistep form 
  
-	// $(document).on('click','.tabs_area ul li a', function (){
-	// 	$('.tabs_area ul li a p').removeClass('active');
-	// 	$(this).find('p').addClass('active') ;
-	// 	var prevRss = $(this).attr('class') ;  
+	$(document).on('click','.tabs_area ul li a', function (){
+		$('.tabs_area ul li a p').removeClass('active');
+		$(this).find('p').addClass('active') ;
+		var prevRss = $(this).attr('class') ;  
      
 
-  //   for (let index = 1; index <= prevRss; index++) {  
-	// 		$('.'+index).find('span').html('<i class="fa-solid fa-circle-check fa_sk_check"></i>');
+    for (let index = 1; index <= prevRss; index++) {  
+			$('.'+index).find('span').html('<i class="fa-solid fa-circle-check fa_sk_check"></i>');
       
-  //     for (let i = prevRss; i <= 18; i++) {  
-	// 		    $('.'+i).find('span').html(i);
-  //     }
-  //   }
+      for (let i = prevRss; i <= 18; i++) {  
+			    $('.'+i).find('span').html(i);
+      }
+    }
 
 
-  //   $('.frm_1_popup_btn').html(' ');
+    $('.frm_1_popup_btn').html(' ');
 
-  //   if(prevRss == 1){ 
-	// 		$('.from_hide').fadeOut();
-	// 		$('.from_1').fadeIn();
-	// 		$('.frm_1_popup_btn').html('ربط المنافسة بطلب احتياج');
-	// 		$('.page_title_text').html('انشاء منافسة'); 
-	// 		$('.next_btn_text').html('التالى');
-	// 	}
-  //   else if (prevRss == 2){ 
-	// 		$('.from_hide').fadeOut();
-  //     $('.from_2').fadeIn();
-	// 		$('.page_title_text').html('ارفاق العروض الفنية'); 
-	// 		$('.next_btn_text').html('إنشاء موقع المنافسة'); 
-  //   }
-  //   else if (prevRss == 3){
-	// 		$('.from_hide').fadeOut();
-  //     $('.from_3').fadeIn();
-	// 		$('.page_title_text').html('إحالة العروض الفنية إلى لجنة فحص العروض'); 
-	// 		$('.next_btn_text').html('إحالة العروض للجنة فحص العروض');  
-  //   }
-  //   else if (prevRss == 4){
-	// 		$('.from_hide').fadeOut();
-  //     $('.from_4').fadeIn(); 
-	// 		$('.page_title_text').html('إحالة العروض الفنية إلى الجهة الطالبة'); 
-	// 		$('.next_btn_text').html('إحالة العروض للتقييم الفني'); 
-  //   }
-  //   else if (prevRss == 5){
-	// 		$('.from_hide').fadeOut();
-  //     $('.from_5').fadeIn(); 
-	// 		$('.page_title_text').html('إحالة دراسة العروض الفنية إلى لجنة فحص العروض'); 
-	// 		$('.next_btn_text').html('ارسال تقرير التقييم الفني'); 
-  //   }
-  //   else if (prevRss == 6){
-	// 		$('.from_hide').fadeOut();
-  //     $('.from_6').fadeIn(); 
-	// 		$('.page_title_text').html('اعتماد تقرير التقييم الفني'); 
-	// 		$('.next_btn_text').html('اعتماد تقرير التقييم الفني'); 
-  //   }
-  //   else if (prevRss == 7){
-	// 		$('.from_hide').fadeOut();
-  //     $('.from_7').fadeIn();
-	// 		$('.page_title_text').html('إرفاق العروض المالية للمتنافسين'); 
-	// 		$('.next_btn_text').html('التالي');  
-  //   }
-  //   else if (prevRss == 8){
-	// 		$('.from_hide').fadeOut();
-  //     $('.from_8').fadeIn(); 
-	// 		$('.page_title_text').html('إحالة العروض المالية إلى لجنة فحص العروض'); 
-	// 		$('.next_btn_text').html('إحالة العروض المالية للجنة فحص العروض'); 
-  //   }
-  //   else if (prevRss == 9){
-	// 		$('.from_hide').fadeOut();
-  //     $('.from_9').fadeIn();
-	// 		$('.page_title_text').html('إحالة العروض الفنية والمالية إلى لجنة التأهيل'); 
-	// 		$('.next_btn_text').html('إحالة إلى لجنة التأهيل');  
-  //   }
-  //   else if (prevRss == 10){
-	// 		$('.from_hide').fadeOut();
-  //     $('.from_10').fadeIn(); 
-	// 		$('.page_title_text').html('إحالة محضر التأهيل واعتماد المورد إلى لجنة فحص العروض'); 
-	// 		$('.next_btn_text').html('اعتماد تأهيل مورد'); 
-  //   }
-  //   else if (prevRss == 11){
-	// 		$('.from_hide').fadeOut();
-  //     $('.from_11').fadeIn(); 
-	// 		$('.page_title_text').html('طلب اعتماد ميزانية مشروع'); 
-	// 		$('.next_btn_text').html('ارسال طلب اعتماد الميزانية'); 
-  //   }
-  //   else if (prevRss == 12){
-	// 		$('.from_hide').fadeOut();
-  //     $('.from_12').fadeIn(); 
-	// 		$('.page_title_text').html('اعتماد ميزانية مشروع'); 
-	// 		$('.next_btn_text').html('اعتماد ميزانية المشروع'); 
-  //   }
-  //   else if (prevRss == 13){
-	// 		$('.from_hide').fadeOut();
-  //     $('.from_13').fadeIn(); 
-	// 		$('.page_title_text').html('إعداد محضر الترسية'); 
-	// 		$('.next_btn_text').html('ارسال طلب اعتماد الترسية'); 
-  //   }
-  //   else if (prevRss == 14){
-	// 		$('.from_hide').fadeOut();
-  //     $('.from_14').fadeIn(); 
-	// 		$('.page_title_text').html('اعتماد محضر الترسية'); 
-	// 		$('.next_btn_text').html('قبول'); 
-  //   }
-  //   else if (prevRss == 15){
-	// 		$('.from_hide').fadeOut();
-  //     $('.from_15').fadeIn(); 
-	// 		$('.page_title_text').html('احالة محضر الترسية المعتمد لإدارة العقود والمشتريات'); 
-	// 		$('.next_btn_text').html('ارسال طلب اعتماد الميزانية'); 
-  //   }
-  //   else if (prevRss == 16){
-	// 		$('.from_hide').fadeOut();
-  //     $('.from_16').fadeIn();
-	// 		$('.page_title_text').html('إرفاق خطاب التعميد'); 
-	// 		$('.next_btn_text').html('اعتماد إرفاق خطاب التعميد');  
-  //   }
-  //   else if (prevRss == 17){
-	// 		$('.from_hide').fadeOut();
-  //     $('.from_17').fadeIn(); 
-	// 		$('.page_title_text').html('إرفاق العقد'); 
-	// 		$('.next_btn_text').html('اعتماد إرفاق العقد'); 
-  //   }
-  //   else if (prevRss == 18){
-	// 		$('.from_hide').fadeOut();
-  //     $('.from_18').fadeIn();
-	// 		$('.page_title_text').html('إغلاق المنافسة'); 
-	// 		$('.next_btn_text').html('اعتماد إرفاق العقد');  
-  //   }
-  //   else{ 
-	// 		$('.from_1').fadeOut();
-  //     $('.from_2').fadeOut();
-  //     $('.from_3').fadeOut();
-  //     $('.from_4').fadeOut();
-  //     $('.from_5').fadeOut();
-  //     $('.from_6').fadeOut();
-  //     $('.from_7').fadeOut();
-  //     $('.from_8').fadeOut();
-  //     $('.from_9').fadeOut();
-  //     $('.from_10').fadeOut();
-  //     $('.from_11').fadeOut();
-  //     $('.from_12').fadeOut();
-  //     $('.from_13').fadeOut();
-  //     $('.from_14').fadeOut();
-  //     $('.from_15').fadeOut();
-  //     $('.from_16').fadeOut();
-  //     $('.from_17').fadeOut();
-  //     $('.from_18').fadeOut();
-	// 	}
+    if(prevRss == 1){ 
+			$('.from_hide').fadeOut();
+			$('.from_1').fadeIn();
+			$('.frm_1_popup_btn').html('ربط المنافسة بطلب احتياج');
+			$('.page_title_text').html('انشاء منافسة'); 
+			$('.next_btn_text').html('التالى');
+		}
+    else if (prevRss == 2){ 
+			$('.from_hide').fadeOut();
+      $('.from_2').fadeIn();
+			$('.page_title_text').html('ارفاق العروض الفنية'); 
+			$('.next_btn_text').html('إنشاء موقع المنافسة'); 
+    }
+    else if (prevRss == 3){
+			$('.from_hide').fadeOut();
+      $('.from_3').fadeIn();
+			$('.page_title_text').html('إحالة العروض الفنية إلى لجنة فحص العروض'); 
+			$('.next_btn_text').html('إحالة العروض للجنة فحص العروض');  
+    }
+    else if (prevRss == 4){
+			$('.from_hide').fadeOut();
+      $('.from_4').fadeIn(); 
+			$('.page_title_text').html('إحالة العروض الفنية إلى الجهة الطالبة'); 
+			$('.next_btn_text').html('إحالة العروض للتقييم الفني'); 
+    }
+    else if (prevRss == 5){
+			$('.from_hide').fadeOut();
+      $('.from_5').fadeIn(); 
+			$('.page_title_text').html('إحالة دراسة العروض الفنية إلى لجنة فحص العروض'); 
+			$('.next_btn_text').html('ارسال تقرير التقييم الفني'); 
+    }
+    else if (prevRss == 6){
+			$('.from_hide').fadeOut();
+      $('.from_6').fadeIn(); 
+			$('.page_title_text').html('اعتماد تقرير التقييم الفني'); 
+			$('.next_btn_text').html('اعتماد تقرير التقييم الفني'); 
+    }
+    else if (prevRss == 7){
+			$('.from_hide').fadeOut();
+      $('.from_7').fadeIn();
+			$('.page_title_text').html('إرفاق العروض المالية للمتنافسين'); 
+			$('.next_btn_text').html('التالي');  
+    }
+    else if (prevRss == 8){
+			$('.from_hide').fadeOut();
+      $('.from_8').fadeIn(); 
+			$('.page_title_text').html('إحالة العروض المالية إلى لجنة فحص العروض'); 
+			$('.next_btn_text').html('إحالة العروض المالية للجنة فحص العروض'); 
+    }
+    else if (prevRss == 9){
+			$('.from_hide').fadeOut();
+      $('.from_9').fadeIn();
+			$('.page_title_text').html('إحالة العروض الفنية والمالية إلى لجنة التأهيل'); 
+			$('.next_btn_text').html('إحالة إلى لجنة التأهيل');  
+    }
+    else if (prevRss == 10){
+			$('.from_hide').fadeOut();
+      $('.from_10').fadeIn(); 
+			$('.page_title_text').html('إحالة محضر التأهيل واعتماد المورد إلى لجنة فحص العروض'); 
+			$('.next_btn_text').html('اعتماد تأهيل مورد'); 
+    }
+    else if (prevRss == 11){
+			$('.from_hide').fadeOut();
+      $('.from_11').fadeIn(); 
+			$('.page_title_text').html('طلب اعتماد ميزانية مشروع'); 
+			$('.next_btn_text').html('ارسال طلب اعتماد الميزانية'); 
+    }
+    else if (prevRss == 12){
+			$('.from_hide').fadeOut();
+      $('.from_12').fadeIn(); 
+			$('.page_title_text').html('اعتماد ميزانية مشروع'); 
+			$('.next_btn_text').html('اعتماد ميزانية المشروع'); 
+    }
+    else if (prevRss == 13){
+			$('.from_hide').fadeOut();
+      $('.from_13').fadeIn(); 
+			$('.page_title_text').html('إعداد محضر الترسية'); 
+			$('.next_btn_text').html('ارسال طلب اعتماد الترسية'); 
+    }
+    else if (prevRss == 14){
+			$('.from_hide').fadeOut();
+      $('.from_14').fadeIn(); 
+			$('.page_title_text').html('اعتماد محضر الترسية'); 
+			$('.next_btn_text').html('قبول'); 
+    }
+    else if (prevRss == 15){
+			$('.from_hide').fadeOut();
+      $('.from_15').fadeIn(); 
+			$('.page_title_text').html('احالة محضر الترسية المعتمد لإدارة العقود والمشتريات'); 
+			$('.next_btn_text').html('ارسال طلب اعتماد الميزانية'); 
+    }
+    else if (prevRss == 16){
+			$('.from_hide').fadeOut();
+      $('.from_16').fadeIn();
+			$('.page_title_text').html('إرفاق خطاب التعميد'); 
+			$('.next_btn_text').html('اعتماد إرفاق خطاب التعميد');  
+    }
+    else if (prevRss == 17){
+			$('.from_hide').fadeOut();
+      $('.from_17').fadeIn(); 
+			$('.page_title_text').html('إرفاق العقد'); 
+			$('.next_btn_text').html('اعتماد إرفاق العقد'); 
+    }
+    else if (prevRss == 18){
+			$('.from_hide').fadeOut();
+      $('.from_18').fadeIn();
+			$('.page_title_text').html('إغلاق المنافسة'); 
+			$('.next_btn_text').html('اعتماد إرفاق العقد');  
+    }
+    else{ 
+			$('.from_1').fadeOut();
+      $('.from_2').fadeOut();
+      $('.from_3').fadeOut();
+      $('.from_4').fadeOut();
+      $('.from_5').fadeOut();
+      $('.from_6').fadeOut();
+      $('.from_7').fadeOut();
+      $('.from_8').fadeOut();
+      $('.from_9').fadeOut();
+      $('.from_10').fadeOut();
+      $('.from_11').fadeOut();
+      $('.from_12').fadeOut();
+      $('.from_13').fadeOut();
+      $('.from_14').fadeOut();
+      $('.from_15').fadeOut();
+      $('.from_16').fadeOut();
+      $('.from_17').fadeOut();
+      $('.from_18').fadeOut();
+		}
 
-	// 	return false;
-	// });
+		return false;
+	});
 
 	$(document).on('click','.next_btn', function (){
 

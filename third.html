@@ -468,7 +468,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="frm_group hidden_frm_group">
-                                        <label for="">الرقم المرجعي بمنصة اعتماد</label> <br>
+                                        <label for="">عدد المتنافسين</label> <br>
                                         <p>4</p>
                                     </div>
                                 </div>
@@ -605,8 +605,8 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="frm_group">
-                                        <label for="">الرقم المرجعي بمنصة اعتماد</label> <br>
+                                    <div class="frm_group"> 
+                                        <label for="">المدة الزمنية لمهمة التقييم الفني</label> <br>
                                         <select name="" id="">
                                             <option value="">125</option>
                                             <option value="">125</option>
@@ -881,7 +881,7 @@
                                                 <td><input class="table_input" type="text" name="" placeholder="لا يوجد" id=""></td>   
                                                 <td>لم يتم تحقيق الهدف</td> 
                                                 <td>لا يوجد</td>
-                                                <td><span class="tbls_span_Color">اعتماد </span><span class="tbl_span">تعديل</span></td>   
+                                                <td><span class="tbls_span_Color"><a href="#">اعتماد </a></span><span class="tbl_span">تعديل</span></td>   
                                                 <td>لم يتم تحقيق الهدف</td> 
                                               </tr>  
                                               <tr>  
@@ -892,7 +892,7 @@
                                                 <td><input class="table_input" type="text" name="" placeholder="لا يوجد" id=""></td>   
                                                 <td>.....</td>  
                                                 <td>لا يوجد</td>  
-                                                <td><span class="tbls_span_Color">اعتماد </span><span class="tbl_span">تعديل</span></td>     
+                                                <td><span class="tbls_span_Color"><a href="#">اعتماد </a></span><span class="tbl_span">تعديل</span></td>     
                                                 <td>.....</td>  
                                               </tr>  
                                               <tr>  
@@ -903,7 +903,7 @@
                                                 <td><input class="table_input" type="text" name="" placeholder="لا يوجد" id=""></td>   
                                                 <td>لم يتم تحقيق الهدف</td>  
                                                 <td>لا يوجد</td>  
-                                                <td><span class="tbls_span_Color">اعتماد </span><span class="tbl_span">تعديل</span></td>   
+                                                <td><span class="tbls_span_Color"><a href="#">اعتماد </a></span><span class="tbl_span">تعديل</span></td>   
                                                 <td>لم يتم تحقيق الهدف</td> 
                                               </tr>  
                                               <tr>  
@@ -914,7 +914,7 @@
                                                 <td><input class="table_input" type="text" name="" placeholder="لا يوجد" id=""></td>   
                                                 <td>.....</td>  
                                                 <td>لا يوجد</td>
-                                                <td><span class="tbls_span_Color">اعتماد </span><span class="tbl_span">تعديل</span></td>        
+                                                <td><span class="tbls_span_Color"><a href="#">اعتماد </a></span><span class="tbl_span">تعديل</span></td>        
                                                 <td>.....</td>   
                                               </tr>  
                                             </tbody>
@@ -1020,6 +1020,11 @@
                                     <div class="table_data">
                                         <div class="table_title_flex">
                                             <h4>احدث المنافسات</h4> 
+                                            <select name="" id="" class="table_fltr">
+                                                <option value="">اجتياز التقييم</option>
+                                                <option value="">اجتياز التقييم</option>
+                                                <option value="">اجتياز التقييم</option>
+                                            </select>
                                         </div>
                                         <table class="table table-striped"> 
                                             <tbody>
@@ -1737,21 +1742,13 @@
                                 <div class="col-md-6">
                                     <div class="frm_group">
                                         <label for="">رقم البند</label> <br>
-                                        <select name="" id="">
-                                            <option value="">1236</option> 
-                                            <option value="">1236</option> 
-                                            <option value="">1236</option> 
-                                        </select> 
+                                        <input type="text" name="" placeholder="1236" id="">
                                     </div>
                                 </div> 
                                 <div class="col-md-6">
                                     <div class="frm_group">
-                                        <label for="">اسم البند</label> <br>
-                                        <select name="" id="">
-                                            <option value="">اسم البند</option> 
-                                            <option value="">اسم البند</option> 
-                                            <option value="">اسم البند</option> 
-                                        </select> 
+                                        <label for="">اسم البند </label> <br> 
+                                        <input type="text" name="" id="" placeholder="اسم البند">
                                     </div>
                                 </div> 
                                 <div class="col-md-6">
@@ -2732,7 +2729,7 @@
                     <div class="popup_btn">
                         <ul> 
                             <li><a href="#" class="btn_1">ربط</a></li>
-                            <li><a href="#" class="btn_2">إلغاء</a></li>
+                            <li><a href="#" class="btn_2 popup_cls">إلغاء</a></li>
                         </ul>
                     </div>
                 </div>
